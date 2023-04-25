@@ -1,3 +1,4 @@
+import styles from "../styles/Home.module.css"
 import { useState } from "react";
 
 export default function Home() {
@@ -123,7 +124,7 @@ export default function Home() {
 
   const renderTable = () => {
     return (
-      <table className="mt-4 border-collapse border border-gray-400">
+      <table className="mt-4 border-collapse border border-gray-400 " id={styles.id}>
         <tbody>
           {Array.from(Array(9)).map((_, i) => (
             <tr key={i}>
